@@ -1,6 +1,7 @@
 package de.sijakubo
 
 import org.apache.poi.ss.usermodel.WorkbookFactory
+import spock.lang.FailsWith
 import spock.lang.Specification
 
 class ExcelAssertTest extends Specification {
@@ -24,6 +25,7 @@ class ExcelAssertTest extends Specification {
       ExcelAssert.assertSheetEquals(xlsWorkbookFile, xlsxWorkbookFile, 1)
   }
 
+  @FailsWith(AssertionError)
   def "should assert not equals when values mismatch"() {
     given:
       def xlsWorkbookFile = new File(this.getClass().getResource("basic_mismatch.xls").getFile())
@@ -35,6 +37,7 @@ class ExcelAssertTest extends Specification {
       ExcelAssert.assertSheetEquals(sheet1, sheet2)
   }
 
+  @FailsWith(AssertionError)
   def "should assert not equals when values order mismatch"() {
     given:
       def xlsWorkbookFile = new File(this.getClass().getResource("basic_mismatch_order.xls").getFile())
