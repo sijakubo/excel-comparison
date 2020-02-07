@@ -21,6 +21,8 @@ dependencies {
 
   implementation 'junit:junit:4.13'
 
+  implementation 'org.slf4j:slf4j-log4j12:1.7.26'
+
   testImplementation 'io.github.nifty10m:yangyin:1.1.2'
   testImplementation 'org.spockframework:spock-core:1.3-groovy-2.5'
 }

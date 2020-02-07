@@ -2,6 +2,10 @@
 .gradle
 gradle/wrapper/gradle-wrapper.jar
 
+# build
+out
+build
+
 # IDEs and editors
 /.idea
 .project
