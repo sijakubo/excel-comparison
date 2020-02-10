@@ -44,7 +44,7 @@ workflows:
           filters:
             tags:
               only: /.*/
-      - deploy:
+      - publish:
           requires:
             - build
           filters:

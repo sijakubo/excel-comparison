@@ -86,9 +86,8 @@ bintray {
   key = System.getenv('BINTRAY_KEY')
   publications = ['ExcelComparisonPublication']
   pkg {
-    repo = 'maven'
-    name = 'sijakubo.excel-comparison'
-    userOrg = 'bintray_user'
+    repo = 'excel-comparison'
+    name = 'excel-comparison'
     licenses = ['Apache-2.0']
     vcsUrl = 'https://github.com/sijakubo/excel-comparison'
     version {
