@@ -1,10 +1,13 @@
 plugins {
   id 'java'
   id 'groovy'
+  id "com.jfrog.bintray" version "1.8.4"
+  id 'com.palantir.git-version' version '0.12.2'
+  id 'maven-publish'
 }
 
 group 'de.sijakubo'
-version '0.1-SNAPSHOT'
+version = gitVersion()
 
 sourceCompatibility = 1.8
 
@@ -31,3 +34,69 @@ task sourcesJar(type: Jar) {
   archiveClassifier = 'sources'
   from sourceSets.main.allSource
 }
+
+task javadocJar(type: Jar) {
+  archiveClassifier = 'javadoc'
+  from javadoc
+}
+
+def pomConfig = {
+  licenses {
+    license {
+      name "The Apache Software License, Version 2.0"
+      url "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      distribution "repo"
+    }
+  }
+  developers {
+    developer {
+      id "sijakubo"
+      name "Simon Jakubowski"
+      email "sijakubo@gmail.com"
+    }
+  }
+
+  scm {
+    url "https://github.com/sijakubo/excel-comparison"
+  }
+}
+
+publishing {
+  publications {
+    ExcelComparisonPublication(MavenPublication) {
+      from components.java
+      artifact sourcesJar
+      artifact javadocJar
+      groupId 'de.sijakubo'
+      artifactId 'excel-comparison'
+      version project.getVersion()
+      pom.withXml {
+        def root = asNode()
+        root.appendNode('description', 'Excel comparison lib')
+        root.appendNode('name', 'excel-comparison')
+        root.appendNode('url', 'https://github.com/sijakubo/excel-comparison')
+        root.children().last() + pomConfig
+      }
+    }
+  }
+}
+
+bintray {
+  user = System.getenv('BINTRAY_USER')
+  key = System.getenv('BINTRAY_KEY')
+  publications = ['ExcelComparisonPublication']
+  pkg {
+    repo = 'maven'
+    name = 'sijakubo.excel-comparison'
+    userOrg = 'bintray_user'
+    licenses = ['Apache-2.0']
+    vcsUrl = 'https://github.com/sijakubo/excel-comparison'
+    version {
+      name = project.getVersion()
+      desc = 'Excel comparison lib'
+      released = new Date()
+      vcsTag = project.getVersion()
+    }
+  }
+}
+
