@@ -15,8 +15,17 @@ TODO
 
 ### JUnit
 ```java
+public class ExcelComparisonTest {
+  
   //using junit  
-  TODO
+  @Test
+  void assertExcelCreation() {
+    File expectedWorkbook = new File(this.getClass().getResource("basic_sample.xls").getFile());
+    File actualWorkbook = new MyExcelGeneration().build();
+
+    Assert.assertEquals(expectedWorkbook , actualWorkbook);
+  }
+}
 ```
 
 ### Spock
