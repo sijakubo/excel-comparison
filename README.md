@@ -4,11 +4,28 @@ Excel-Comparision Framework which is able to create a human readable diff when c
 
 ### Gradle
 ```
-TODO
+repositories {
+  jcenter()
+}
+
+dependencies {
+  testImplementation 'de.sijakubo:excel-comparison:0.1.1'
+}
 ```
 ### Maven
 ```
-TODO
+<repositories>
+    <repository>
+      <id>jcenter</id>
+      <url>https://jcenter.bintray.com/</url>
+    </repository>
+</repositories>
+...
+<dependency>
+	<groupId>de.sijakubo</groupId>
+	<artifactId>excel-comparison</artifactId>
+	<version>0.1.1</version>
+</dependency>
 ```
 
 ## General Usage
