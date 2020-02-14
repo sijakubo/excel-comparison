@@ -2,6 +2,8 @@ Excel-Comparision Framework which is able to create a human readable diff when c
 
 ## Integration 
 
+Check out the latest Version at: [ ![Download](https://api.bintray.com/packages/sijakubo/excel-comparison/excel-comparison/images/download.svg) ](https://bintray.com/sijakubo/excel-comparison/excel-comparison/_latestVersion)
+
 ### Gradle
 ```
 repositories {
@@ -9,7 +11,7 @@ repositories {
 }
 
 dependencies {
-  testImplementation 'de.sijakubo:excel-comparison:0.1.1'
+  testImplementation 'de.sijakubo:excel-comparison:***'
 }
 ```
 ### Maven
@@ -24,7 +26,7 @@ dependencies {
 <dependency>
   <groupId>de.sijakubo</groupId>
   <artifactId>excel-comparison</artifactId>
-  <version>0.1.1</version>
+  <version>***</version>
 </dependency>
 ```
 
