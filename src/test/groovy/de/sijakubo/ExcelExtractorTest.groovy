@@ -9,6 +9,17 @@ import static de.xm.yangyin.FileSnapshots.snapshot
 
 class ExcelExtractorTest extends Specification {
 
+  def "should extract whole workbook information"() {
+    given:
+      def testExcelFile = new File(this.getClass().getResource("basic_sample.xls").getFile())
+
+    when:
+      def workbookInformation = ExcelExtractor.extractWorkbookValues(testExcelFile)
+
+    then:
+      snapshot(workbookInformation, JSON) == current(workbookInformation, JSON)
+  }
+
   @Unroll
   def "should extract basic sheet information in file formats: #format"() {
     given:
@@ -37,15 +48,25 @@ class ExcelExtractorTest extends Specification {
       snapshot(formularSheetValues, JSON) == current(formularSheetValues, JSON)
   }
 
-  def "should extract whole workbook information"() {
+  def "should extract sheet values by index"() {
     given:
       def testExcelFile = new File(this.getClass().getResource("basic_sample.xls").getFile())
 
     when:
-      def workbookInformation = ExcelExtractor.extractWorkbookValues(testExcelFile)
+      def workbookInformation = ExcelExtractor.extractSheetValues(testExcelFile, 0)
 
     then:
       snapshot(workbookInformation, JSON) == current(workbookInformation, JSON)
   }
 
+  def "should extract sheet values by name"() {
+    given:
+      def testExcelFile = new File(this.getClass().getResource("basic_sample.xls").getFile())
+
+    when:
+      def workbookInformation = ExcelExtractor.extractSheetValues(testExcelFile, 'Customer')
+
+    then:
+      snapshot(workbookInformation, JSON) == current(workbookInformation, JSON)
+  }
 }

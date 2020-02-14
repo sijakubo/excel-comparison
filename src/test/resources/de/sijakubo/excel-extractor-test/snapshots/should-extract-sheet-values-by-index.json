@@ -1,0 +1,389 @@
+[
+    {
+        "Item": "Pencil",
+        "Unit Cost": 1.99,
+        "Total": 189.05,
+        "Region": "East",
+        "Rep": "Jones",
+        "Units": 95.0,
+        "OrderDate": "2018-01-06"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 19.99,
+        "Total": 999.4999999999999,
+        "Region": "Central",
+        "Rep": "Kivell",
+        "Units": 50.0,
+        "OrderDate": "2018-01-23"
+    },
+    {
+        "Item": "Pencil",
+        "Unit Cost": 4.99,
+        "Total": 179.64000000000001,
+        "Region": "Central",
+        "Rep": "Jardine",
+        "Units": 36.0,
+        "OrderDate": "2018-02-09"
+    },
+    {
+        "Item": "Pen",
+        "Unit Cost": 19.99,
+        "Total": 539.7299999999999,
+        "Region": "Central",
+        "Rep": "Gill",
+        "Units": 27.0,
+        "OrderDate": "2018-02-26"
+    },
+    {
+        "Item": "Pencil",
+        "Unit Cost": 2.99,
+        "Total": 167.44,
+        "Region": "West",
+        "Rep": "Sorvino",
+        "Units": 56.0,
+        "OrderDate": "2018-03-15"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 4.99,
+        "Total": 299.40000000000003,
+        "Region": "East",
+        "Rep": "Jones",
+        "Units": 60.0,
+        "OrderDate": "2018-04-01"
+    },
+    {
+        "Item": "Pencil",
+        "Unit Cost": 1.99,
+        "Total": 149.25,
+        "Region": "Central",
+        "Rep": "Andrews",
+        "Units": 75.0,
+        "OrderDate": "2018-04-18"
+    },
+    {
+        "Item": "Pencil",
+        "Unit Cost": 4.99,
+        "Total": 449.1,
+        "Region": "Central",
+        "Rep": "Jardine",
+        "Units": 90.0,
+        "OrderDate": "2018-05-05"
+    },
+    {
+        "Item": "Pencil",
+        "Unit Cost": 1.99,
+        "Total": 63.68,
+        "Region": "West",
+        "Rep": "Thompson",
+        "Units": 32.0,
+        "OrderDate": "2018-05-22"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 8.99,
+        "Total": 539.4,
+        "Region": "East",
+        "Rep": "Jones",
+        "Units": 60.0,
+        "OrderDate": "2018-06-08"
+    },
+    {
+        "Item": "Pencil",
+        "Unit Cost": 4.99,
+        "Total": 449.1,
+        "Region": "Central",
+        "Rep": "Morgan",
+        "Units": 90.0,
+        "OrderDate": "2018-06-25"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 1.99,
+        "Total": 57.71,
+        "Region": "East",
+        "Rep": "Howard",
+        "Units": 29.0,
+        "OrderDate": "2018-07-12"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 19.99,
+        "Total": 1619.1899999999998,
+        "Region": "East",
+        "Rep": "Parent",
+        "Units": 81.0,
+        "OrderDate": "2018-07-29"
+    },
+    {
+        "Item": "Pencil",
+        "Unit Cost": 4.99,
+        "Total": 174.65,
+        "Region": "East",
+        "Rep": "Jones",
+        "Units": 35.0,
+        "OrderDate": "2018-08-15"
+    },
+    {
+        "Item": "Desk",
+        "Unit Cost": 125.0,
+        "Total": 250.0,
+        "Region": "Central",
+        "Rep": "Smith",
+        "Units": 2.0,
+        "OrderDate": "2018-09-01"
+    },
+    {
+        "Item": "Pen Set",
+        "Unit Cost": 15.99,
+        "Total": 255.84,
+        "Region": "East",
+        "Rep": "Jones",
+        "Units": 16.0,
+        "OrderDate": "2018-09-18"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 8.99,
+        "Total": 251.72,
+        "Region": "Central",
+        "Rep": "Morgan",
+        "Units": 28.0,
+        "OrderDate": "2018-10-05"
+    },
+    {
+        "Item": "Pen",
+        "Unit Cost": 8.99,
+        "Total": 575.36,
+        "Region": "East",
+        "Rep": "Jones",
+        "Units": 64.0,
+        "OrderDate": "2018-10-22"
+    },
+    {
+        "Item": "Pen",
+        "Unit Cost": 19.99,
+        "Total": 299.84999999999997,
+        "Region": "East",
+        "Rep": "Parent",
+        "Units": 15.0,
+        "OrderDate": "2018-11-08"
+    },
+    {
+        "Item": "Pen Set",
+        "Unit Cost": 4.99,
+        "Total": 479.04,
+        "Region": "Central",
+        "Rep": "Kivell",
+        "Units": 96.0,
+        "OrderDate": "2018-11-25"
+    },
+    {
+        "Item": "Pencil",
+        "Unit Cost": 1.29,
+        "Total": 86.43,
+        "Region": "Central",
+        "Rep": "Smith",
+        "Units": 67.0,
+        "OrderDate": "2018-12-12"
+    },
+    {
+        "Item": "Pen Set",
+        "Unit Cost": 15.99,
+        "Total": 1183.26,
+        "Region": "East",
+        "Rep": "Parent",
+        "Units": 74.0,
+        "OrderDate": "2018-12-29"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 8.99,
+        "Total": 413.54,
+        "Region": "Central",
+        "Rep": "Gill",
+        "Units": 46.0,
+        "OrderDate": "2019-01-15"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 15.0,
+        "Total": 1305.0,
+        "Region": "Central",
+        "Rep": "Smith",
+        "Units": 87.0,
+        "OrderDate": "2019-02-01"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 4.99,
+        "Total": 19.96,
+        "Region": "East",
+        "Rep": "Jones",
+        "Units": 4.0,
+        "OrderDate": "2019-02-18"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 19.99,
+        "Total": 139.92999999999998,
+        "Region": "West",
+        "Rep": "Sorvino",
+        "Units": 7.0,
+        "OrderDate": "2019-03-07"
+    },
+    {
+        "Item": "Pen Set",
+        "Unit Cost": 4.99,
+        "Total": 249.5,
+        "Region": "Central",
+        "Rep": "Jardine",
+        "Units": 50.0,
+        "OrderDate": "2019-03-24"
+    },
+    {
+        "Item": "Pencil",
+        "Unit Cost": 1.99,
+        "Total": 131.34,
+        "Region": "Central",
+        "Rep": "Andrews",
+        "Units": 66.0,
+        "OrderDate": "2019-04-10"
+    },
+    {
+        "Item": "Pen",
+        "Unit Cost": 4.99,
+        "Total": 479.04,
+        "Region": "East",
+        "Rep": "Howard",
+        "Units": 96.0,
+        "OrderDate": "2019-04-27"
+    },
+    {
+        "Item": "Pencil",
+        "Unit Cost": 1.29,
+        "Total": 68.37,
+        "Region": "Central",
+        "Rep": "Gill",
+        "Units": 53.0,
+        "OrderDate": "2019-05-14"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 8.99,
+        "Total": 719.2,
+        "Region": "Central",
+        "Rep": "Gill",
+        "Units": 80.0,
+        "OrderDate": "2019-05-31"
+    },
+    {
+        "Item": "Desk",
+        "Unit Cost": 125.0,
+        "Total": 625.0,
+        "Region": "Central",
+        "Rep": "Kivell",
+        "Units": 5.0,
+        "OrderDate": "2019-06-17"
+    },
+    {
+        "Item": "Pen Set",
+        "Unit Cost": 4.99,
+        "Total": 309.38,
+        "Region": "East",
+        "Rep": "Jones",
+        "Units": 62.0,
+        "OrderDate": "2019-07-04"
+    },
+    {
+        "Item": "Pen Set",
+        "Unit Cost": 12.49,
+        "Total": 686.95,
+        "Region": "Central",
+        "Rep": "Morgan",
+        "Units": 55.0,
+        "OrderDate": "2019-07-21"
+    },
+    {
+        "Item": "Pen Set",
+        "Unit Cost": 23.95,
+        "Total": 1005.9,
+        "Region": "Central",
+        "Rep": "Kivell",
+        "Units": 42.0,
+        "OrderDate": "2019-08-07"
+    },
+    {
+        "Item": "Desk",
+        "Unit Cost": 275.0,
+        "Total": 825.0,
+        "Region": "West",
+        "Rep": "Sorvino",
+        "Units": 3.0,
+        "OrderDate": "2019-08-24"
+    },
+    {
+        "Item": "Pencil",
+        "Unit Cost": 1.29,
+        "Total": 9.030000000000001,
+        "Region": "Central",
+        "Rep": "Gill",
+        "Units": 7.0,
+        "OrderDate": "2019-09-10"
+    },
+    {
+        "Item": "Pen",
+        "Unit Cost": 1.99,
+        "Total": 151.24,
+        "Region": "West",
+        "Rep": "Sorvino",
+        "Units": 76.0,
+        "OrderDate": "2019-09-27"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 19.99,
+        "Total": 1139.4299999999998,
+        "Region": "West",
+        "Rep": "Thompson",
+        "Units": 57.0,
+        "OrderDate": "2019-10-14"
+    },
+    {
+        "Item": "Pencil",
+        "Unit Cost": 1.29,
+        "Total": 18.060000000000002,
+        "Region": "Central",
+        "Rep": "Andrews",
+        "Units": 14.0,
+        "OrderDate": "2019-10-31"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 4.99,
+        "Total": 54.89,
+        "Region": "Central",
+        "Rep": "Jardine",
+        "Units": 11.0,
+        "OrderDate": "2019-11-17"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 19.99,
+        "Total": 1879.06,
+        "Region": "Central",
+        "Rep": "Jardine",
+        "Units": 94.0,
+        "OrderDate": "2019-12-04"
+    },
+    {
+        "Item": "Binder",
+        "Unit Cost": 4.99,
+        "Total": 139.72,
+        "Region": "Central",
+        "Rep": "Andrews",
+        "Units": 28.0,
+        "OrderDate": "2019-12-21"
+    }
+]

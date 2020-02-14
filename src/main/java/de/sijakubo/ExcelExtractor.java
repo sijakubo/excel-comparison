@@ -1,5 +1,6 @@
 package de.sijakubo;
 
+import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
@@ -12,8 +13,15 @@ import java.util.Map;
 public class ExcelExtractor {
 
     public static List<List<Map<String, Object>>> extractWorkbookValues(File workbookFile) throws IOException {
-        Workbook workbook = WorkbookFactory.create(workbookFile);
-        return extractWorkbookValues(workbook);
+        return extractWorkbookValues(createWorkbookFromFile(workbookFile));
+    }
+
+    public static List<Map<String, Object>> extractSheetValues(File workbookFile, String sheetName) throws IOException {
+        return extractSheetValues(createWorkbookFromFile(workbookFile), sheetName);
+    }
+
+    public static List<Map<String, Object>> extractSheetValues(File workbookFile, int sheetIndex) throws IOException {
+        return extractSheetValues(createWorkbookFromFile(workbookFile), sheetIndex);
     }
 
     public static List<List<Map<String, Object>>> extractWorkbookValues(Workbook workbook) {
@@ -25,13 +33,20 @@ public class ExcelExtractor {
         return sheetValues;
     }
 
-    public static List<Map<String, Object>> extractSheetValues(File workbookFile, int sheetIndex) throws IOException {
-        Workbook workbook = WorkbookFactory.create(workbookFile);
-        return extractSheetValues(workbook, sheetIndex);
+    public static List<Map<String, Object>> extractSheetValues(Workbook workbook, String sheetName) {
+        return extractSheetValues(workbook.getSheet(sheetName));
     }
 
     public static List<Map<String, Object>> extractSheetValues(Workbook workbook, int sheetIndex) {
-        ExcelSheet sheet = new ExcelSheet(workbook.getSheetAt(sheetIndex));
-        return sheet.getRowValues();
+        return extractSheetValues(workbook.getSheetAt(sheetIndex));
+    }
+
+    public static List<Map<String, Object>> extractSheetValues(Sheet sheet) {
+        ExcelSheet excelSheet = new ExcelSheet(sheet);
+        return excelSheet.getRowValues();
+    }
+
+    private static Workbook createWorkbookFromFile(File workbookFile) throws IOException {
+        return WorkbookFactory.create(workbookFile);
     }
 }
